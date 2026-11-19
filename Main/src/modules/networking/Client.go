@@ -1,4 +1,4 @@
-package Networking
+package networking
 
 import (
 	"fmt"
@@ -11,9 +11,9 @@ import (
 // Init
 const MaximumWaitTime = 15 // seconds
 const Address = "255.255.255.255:8080"// Temporary port
-AppInfo := os.Open("AppInfo.json")
+//AppInfo := os.Open("AppInfo.json")
 
-defer AppInfo.Close()
+//defer AppInfo.Close()
 
 
 

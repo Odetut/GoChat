@@ -1,4 +1,4 @@
-package Utilities
+package utilities
 import "fmt"
 
 // Intro prints the GoChat logo to the console.

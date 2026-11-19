@@ -1,13 +1,13 @@
 package main
 
 import (
-	"GoChat/Main/Src/Modules/Utilities"
-	"GoChat/Main/Src/Modules/Messaging"
+	"GoChat/main/src/modules/utilities"
+	"GoChat/main/src/modules/messaging"
 )
 
 func main() {
-	Utilities.Intro()
-	Messaging.PromptMessage("You: ", "")
+	utilities.Intro()
+	messaging.PromptMessage("You: ", "")
 	
 
 	
