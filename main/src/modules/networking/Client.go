@@ -3,7 +3,7 @@ package networking
 import (
 	"fmt"
 	"net"
-	"os"
+	
 	
 	
 )
@@ -11,32 +11,27 @@ import (
 // Init
 const MaximumWaitTime = 15 // seconds
 const Address = "255.255.255.255:8080"// Temporary port
-//AppInfo := os.Open("AppInfo.json")
-
-//defer AppInfo.Close()
 
 
 
 func searchForServer() bool {
 	fmt.Println("Looking for server...")
-	Connection, Err = net.Dial("udp", Address)
+	Connection, Err := net.Dial("udp", Address)
 
 	if Err != nil {
 		fmt.Println("No server found.")
 		return false
 	}
 
-	Connection.Write([]byte("Hello Server!"))
-	
+	Connection.Write([]byte("GOCHAT"))
+	return true
+}	
 
 
-
-}
-
-func Disconnect() {
-	fmt.Println("Disconnecting from server...")
-	Connection.Close()
-}
+// func Disconnect() {
+// 	fmt.Println("Disconnecting from server...")
+// 	Connection.Close() 
+// }
 
 
 

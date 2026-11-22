@@ -3,6 +3,7 @@ package networking
 import (
 	"fmt"
 	"net"
+	"github.com/coder/websocket"
 )
 
 func StartServer() {
